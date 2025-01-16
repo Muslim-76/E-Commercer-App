@@ -41,17 +41,17 @@ const Cart = () => {
 
                 <div className="flex items-center space-x-4">
                   {/* Update Quantity */}
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center text-yellow-500 gap-2">
                     <button
                       onClick={() => handleQuantityChange(item.id, item.quantity - 1)}
-                      className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md"
+                      className="px-4 py-2 bg-gray-300 text-green-900 rounded-md"
                     >
                       -
                     </button>
                     <span className="text-lg">{item.quantity}</span>
                     <button
                       onClick={() => handleQuantityChange(item.id, item.quantity + 1)}
-                      className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md"
+                      className="px-4 py-2 bg-gray-300 text-green-900 rounded-md"
                     >
                       +
                     </button>
@@ -79,7 +79,7 @@ const Cart = () => {
 
             {/* Checkout Button */}
             <div className="mt-6 flex justify-center">
-              <button className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300">
+              <button className="bg-black text-white py-2 px-6 rounded-md hover:bg-green-700 transition duration-300">
                 Proceed to Checkout
               </button>
             </div>

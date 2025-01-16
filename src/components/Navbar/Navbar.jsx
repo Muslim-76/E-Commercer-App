@@ -6,13 +6,15 @@ import { FaCartPlus, FaCaretDown } from "react-icons/fa";
 import DarkMode from "./Darkmode"; // Ensure this component is correctly defined and exported
 import { useCart } from "../../CartContext"; // Import useCart hook from CartContext
 
+
 // Menu and Dropdown Links
 const Menu = [
   { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "Top Rated", link: "/top-rated" },
+  { id: 2, name: "Women Wear", link: "/womens-wear" },
   { id: 3, name: "Kids Wear", link: "/kids-wear" },
   { id: 4, name: "Mens Wear", link: "/mens-wear" },
   { id: 5, name: "Electronics", link: "/electronics" },
+  
 ];
 
 const DropdownLinks = [
@@ -50,10 +52,10 @@ const Navbar = () => {
             {/* Cart Icon */}
             <Link
               to="/cart"
-              className="bg-gradient-to-r from-primary to-secondary text-blue-500 py-1 px-4 rounded-full flex items-center gap-2 hover:bg-primary hover:text-white dark:hover:text-gray-900"
+              className="bg-gradient-to-r from-primary to-secondary text-yellow-500 py-1 px-4 rounded-full flex items-center gap-2 hover:bg-primary hover:bg-green-400 dark:hover:text-gray-900"
             >
               <FaCartPlus className="text-xl" />
-              <span className="text-white text-sm">{cartCount || 0}</span>
+              <span className="text-red-500 text-sm">{cartCount || 0}</span>
             </Link>
 
             {/* Dark Mode Toggle */}
@@ -88,7 +90,7 @@ const Navbar = () => {
                   <Link
                     key={item.id}
                     to={item.link}
-                    className="block p-2 hover:bg-primary hover:text-white dark:hover:bg-secondary rounded-md transition-colors"
+                    className="block p-2 hover:bg-primary hover:text-black dark:hover:bg-secondary rounded-md transition-colors"
                   >
                     {item.name}
                   </Link>

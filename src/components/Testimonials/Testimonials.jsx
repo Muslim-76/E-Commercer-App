@@ -71,15 +71,15 @@ const Testimonials = () => {
   };
 
   const handleViewDetails = (id) => {
-    navigate(`/testimonial/${id}`); // Navigate to detailed testimonial page
+    navigate(`/testimonial/${id}`); 
   };
 
   const handleSubmitFeedback = () => {
-    navigate("/submit-feedback"); // Navigate to feedback submission page
+    navigate("/submit-feedback"); 
   };
 
   return (
-    <div className="py-10 mb-10">
+    <div className=" py-10 mb-10 ">
       <div className="container">
         {/* Header Section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">

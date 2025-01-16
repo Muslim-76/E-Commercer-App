@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import footerLogo from "../../assets/websites/logo1.png";
-import Banner from "../../assets/websites/orange-pattern.jpg";
+import Banner from "../../assets/websites/footer-pattern.jpg";
 import {
   FaFacebook,
   FaInstagram,
