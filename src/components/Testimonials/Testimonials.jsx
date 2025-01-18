@@ -102,7 +102,7 @@ const Testimonials = () => {
                   <div className="mb-4">
                     <img
                       src={data.img}
-                      alt={`Testimonial image of ${data.name}`}
+                      alt={`Testimonial profile of ${data.name}`}
                       className="rounded-full w-20 h-20"
                     />
                   </div>
