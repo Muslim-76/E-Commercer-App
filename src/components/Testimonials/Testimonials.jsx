@@ -6,25 +6,25 @@ const TestimonialData = [
   {
     id: 1,
     name: "Victor",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
     img: "https://picsum.photos/101/101",
   },
   {
     id: 2,
     name: "Satya Nadella",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
     img: "https://picsum.photos/102/102",
   },
   {
     id: 3,
     name: "Virat Kohli",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
     img: "https://picsum.photos/104/104",
   },
   {
     id: 4,
     name: "Sachin Tendulkar",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
     img: "https://picsum.photos/103/103",
   },
 ];
@@ -57,7 +57,6 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2,
         },
       },
       {
@@ -71,23 +70,22 @@ const Testimonials = () => {
   };
 
   const handleViewDetails = (id) => {
-    navigate(`/testimonial/${id}`); 
+    navigate(`/testimonial/${id}`);
   };
 
   const handleSubmitFeedback = () => {
-    navigate("/submit-feedback"); 
+    navigate("/submit-feedback");
   };
 
   return (
-    <div className=" py-10 mb-10 ">
+    <div className="py-10 mb-10">
       <div className="container">
         {/* Header Section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
           <p className="text-sm text-primary">What our customers are saying</p>
           <h1 className="text-3xl font-bold">Testimonials</h1>
           <p className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
+            Discover what our clients have to say about us.
           </p>
         </div>
 
@@ -104,7 +102,7 @@ const Testimonials = () => {
                   <div className="mb-4">
                     <img
                       src={data.img}
-                      alt={`${data.name}'s image`}
+                      alt={`Testimonial image of ${data.name}`}
                       className="rounded-full w-20 h-20"
                     />
                   </div>
@@ -116,7 +114,7 @@ const Testimonials = () => {
                       </h1>
                     </div>
                   </div>
-                  <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
+                  <p className="text-black/20 text-9xl font-serif absolute top-0 right-0 opacity-20">
                     ,,
                   </p>
                 </div>
