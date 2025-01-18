@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import footerLogo from "../../assets/websites/logo1.png";
 import Banner from "../../assets/websites/footer-pattern.jpg";
 import {
-  FaFacebook,
+  FaGithub, // GitHub icon
   FaInstagram,
-  FaLinkedin,
+  FaWhatsapp, // WhatsApp icon
   FaLocationArrow,
   FaMobileAlt,
 } from "react-icons/fa";
@@ -96,14 +96,29 @@ const Footer = () => {
 
             <div>
               <div className="flex items-center gap-3 mt-6">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/silent_killer__970?igsh=MTJha2J4dWJmbzN1bA=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <FaInstagram className="text-3xl" />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaFacebook className="text-3xl" />
+                <a
+                  href="https://wa.me/917644998291"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp className="text-3xl" />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin className="text-3xl" />
+                <a
+                  href="https://github.com/Muslim-76"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FaGithub className="text-3xl" />
                 </a>
               </div>
               <div className="mt-6">

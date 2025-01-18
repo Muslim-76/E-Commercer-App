@@ -99,7 +99,7 @@ const Blog = () => {
             <div className="flex justify-between items-center text-gray-500">
               <span>{post.date}</span>
               <a
-                href="#"
+                href="https://www.google.co.in/"
                 className="text-blue-500 hover:underline"
               >
                 Read more
