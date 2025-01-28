@@ -1,5 +1,7 @@
 import React from "react";
 import { useCart } from "../CartContext"; // Import the useCart hook
+import { Link } from "react-router-dom";
+
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity } = useCart();
@@ -79,9 +81,12 @@ const Cart = () => {
 
             {/* Checkout Button */}
             <div className="mt-6 flex justify-center">
-              <button className="bg-black text-white py-2 px-6 rounded-md hover:bg-green-700 transition duration-300">
-                Proceed to Checkout
-              </button>
+            <Link
+            to="/payment"
+            className="bg-black text-white py-2 px-6 rounded-md hover:bg-green-700 transition duration-300 inline-block"
+           >
+           Proceed to Checkout
+           </Link>
             </div>
           </div>
         )}
