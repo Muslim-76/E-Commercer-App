@@ -31,7 +31,7 @@ import { loadStripe } from "@stripe/stripe-js";
 
 
 // Load your Stripe public key (replace with your actual key)
-const stripePromise = loadStripe("your-public-key-here");
+const stripePromise = loadStripe("sk_test_tR3PYbcVNZZ796tH88S4VQ2u");
 
 const App = () => {
   const [orderPopup, setOrderPopup] = useState(false);
